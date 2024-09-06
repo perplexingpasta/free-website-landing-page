@@ -27,8 +27,12 @@ const config = {
     },
     extend: {
       fontFamily: {
-        lexend: ["Lexend", "Helvetica", "Arial", "sans-serif"],
-        lexendDeca: ["LexendDeca", "Helvetica", "Arial", "sans-serif"],
+        poppins: ["Poppins", "Arial", "sans-serif"],
+        montserrat: ["Montserrat", "Arial", "sans-serif"],
+        // lexend: ["Lexend", "Helvetica", "Arial", "sans-serif"],
+        // lexendDeca: ["LexendDeca", "Helvetica", "Arial", "sans-serif"],
+        // inter: ["Inter", "Arial", "sans-serif"],
+        // coolvetica: ["Coolvetica", "Arial", "sans-serif"],
       },
       fontWeight: {
         thin: "100",

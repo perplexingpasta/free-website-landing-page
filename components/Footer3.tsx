@@ -27,7 +27,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="relative mx-auto mt-20 flex max-w-[85rem] flex-col items-center justify-center overflow-clip px-5  text-white sm:px-10 lg:pt-20">
+    <div className="relative mx-auto mt-20 flex max-w-[85rem] flex-col items-center justify-center overflow-clip px-5 text-white sm:px-10">
       <div className="relative w-full pb-10 font-lexendDeca" id="footer">
         {/* <div className="absolute left-0 top-0 flex h-[20rem] w-full items-center justify-center bg-white bg-grid-black/[0.05] dark:bg-black-100 dark:bg-grid-white/[0.05]">
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
@@ -45,24 +45,27 @@ const Footer = () => {
             </Link>
             <br />
             <br className="hidden md:block" />
-            <div className="flex flex-row justify-between text-xs text-white-100 md:text-sm lg:flex-col">
-              <Link
-                href="/legal/privacy-policy"
-                target="_blank"
-                rel="noopener"
-                className="hover:text-purple"
-              >
-                <p>Privacy Policy</p>
-              </Link>
-              <br />
-              <Link
-                href="/legal/terms-of-use"
-                target="_blank"
-                rel="noopener"
-                className="hover:text-purple"
-              >
-                <p>Terms of Use</p>
-              </Link>
+            <div className="flex items-center justify-center gap-6 pt-5 md:justify-start md:gap-3 md:pt-0 lg:pt-12">
+              {socialMedia.map((profile) => (
+                <div
+                  key={profile.id}
+                  className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg border border-black-300 bg-black-200 bg-opacity-75 saturate-150 backdrop-blur-lg backdrop-filter"
+                >
+                  <Link
+                    href={profile.link}
+                    target="_blank"
+                    rel="noopener"
+                    className="transition ease-in-out hover:scale-110"
+                  >
+                    <Image
+                      src={profile.img}
+                      alt={profile.alt}
+                      width={profile.width}
+                      height={profile.height}
+                    />
+                  </Link>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -71,9 +74,6 @@ const Footer = () => {
           <div className="hidden flex-1 flex-wrap justify-start gap-10 md:justify-around lg:flex">
             {footerLinks.map((section) => (
               <div key={section.title}>
-                {/* <h1 className="mb-6 text-2xl font-medium leading-normal text-white">
-                {section.title}
-              </h1> */}
                 <ul>
                   {section.links.map((item) => (
                     <li
@@ -89,30 +89,18 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-4 border-b border-gray-800 md:mt-12" />
+        {/* <div className="mt-4 border-b border-gray-800 md:mt-12" /> */}
 
         <div className="relative z-50 mt-4 flex flex-col items-center justify-between md:flex-row">
-          {/* <p className="hidden text-sm font-light lg:block lg:text-base lg:font-normal">
-            Thanks{" "}
-            <Link
-              href="https://ui.aceternity.com/"
-              target="_blank"
-              rel="noopener"
-              className="!cursor-pointer hover:text-purple"
-            >
-              Aceternity UI
-            </Link>
-          </p> */}
-
-          <p className="text-sm font-light md:text-base lg:font-normal">
+          {/* <p className="text-sm font-light md:text-base lg:font-normal">
             Copyright &copy; 2024{" "}
             <Link href="/" className="!cursor-pointer hover:text-purple">
               {" "}
               céleste consulting
             </Link>
-          </p>
+          </p> */}
 
-          <div className="flex items-center gap-6 pt-5 md:gap-3 md:pt-0">
+          {/* <div className="flex items-center gap-6 pt-5 md:gap-3 md:pt-0">
             <Link href="/rj" target="_blank">
               <svg
                 className="cursor-pointer fill-white hover:fill-[#ffc500]"
@@ -151,7 +139,7 @@ const Footer = () => {
                 </Link>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
