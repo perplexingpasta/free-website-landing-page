@@ -5,22 +5,17 @@ import dynamic from "next/dynamic";
 import GridAndDotBg from "@/components/ui/GridAndDotBg";
 import Hero from "@/components/Hero3";
 import Header from "@/components/Header";
-import Section2 from "@/components/Section2";
-import CTAsection from "@/components/CTAsection";
 
 const DynamicFooter = dynamic(() => import("@/components/Footer3"), {
   ssr: false,
 });
-// const DynamicFlipCardSection = dynamic(
-//   () => import("../components/FlipCardSection"),
-//   {
-//     ssr: false,
-//   },
-// );
-// const DynamicReadyTo = dynamic(() => import("../components/ReadyTo"), {
-//   ssr: false,
-// });
 const DynamicWhatsapp = dynamic(() => import("@/components/Whatsapp"), {
+  ssr: false,
+});
+const DynamicSection2 = dynamic(() => import("@/components/Section2"), {
+  ssr: false,
+});
+const DynamicCTA = dynamic(() => import("@/components/CTAsection"), {
   ssr: false,
 });
 
@@ -36,11 +31,11 @@ const page = () => {
           </section>
           <div className="relative border-t-4 border-gray-200" />
           <section className="relative my-12 md:my-24">
-            <Section2 />
+            <DynamicSection2 />
           </section>
           <div className="relative border-t-4 border-gray-200" />
           <section className="relative my-12 md:my-24 md:mt-24">
-            <CTAsection />
+            <DynamicCTA />
           </section>
           <DynamicWhatsapp />
         </div>

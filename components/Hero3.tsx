@@ -1,29 +1,28 @@
 import Image from "next/image";
 import React from "react";
-import LitUpButton from "./ui/LitUpButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import LitUpButtonBg from "./ui/LitUpButtonBg";
 import Link from "next/link";
 
 const Hero3 = () => {
   return (
-    <div className="flex flex-col-reverse items-center justify-center md:flex-row md:justify-between">
+    <div className="flex flex-col-reverse items-center justify-center lg:flex-row lg:justify-between">
       {/* Left side */}
-      <div className="mt-12 text-center text-xl md:mt-4 md:text-left md:text-2xl">
+      <div className="mt-12 text-center text-xl md:text-xl lg:mt-4 lg:text-left">
         <p>
           Are you a <span className="underline">dermatologist</span> looking to
           be the best in your city?
         </p>
 
-        <h1 className="font-montserrat mt-8 text-3xl font-medium leading-tight md:max-w-4xl md:text-4xl md:font-semibold">
-          Get your professional website today and become the first dermatologist
-          that shows up on Google for{" "}
+        <h1 className="mt-8 font-montserrat text-3xl font-semibold leading-snug md:mt-12 md:text-4xl md:leading-tight lg:max-w-4xl">
+          Get your new website today and become the first dermatologist that
+          shows up on Google for{" "}
           <span className="text-violet-500 underline">FREE!</span>
         </h1>
 
-        <div className="mt-10 max-w-4xl text-left">
-          <p className="mb-2 font-medium">Imagine a website that:</p>
-          <ul className="space-y-2 text-lg">
+        <div className="mx-auto mt-10 max-w-[23rem] text-left md:mt-16 md:max-w-xl lg:mx-0 lg:max-w-4xl">
+          <p className="mb-2 md:mb-4">Imagine a website that:</p>
+          <ul className="space-y-2 text-lg md:space-y-4 md:text-xl">
             <li className="pl-5 -indent-5">
               ✦ Ranks among the top results on Google, when people search for
               &quot;best dermatologist in the city&quot; 🌍
@@ -59,7 +58,7 @@ const Hero3 = () => {
             />
           </Link>
         </div>
-        <p className="mt-4 text-lg md:max-w-md md:text-xl">
+        <p className="mx-auto mt-4 max-w-xs text-base md:text-lg lg:mx-0 lg:max-w-md lg:text-xl">
           It&apos;s genuinely 100% free forever with 1 year support, we promise!
           😊
         </p>
@@ -67,13 +66,15 @@ const Hero3 = () => {
 
       {/* Right side */}
       <div className="flex-shrink-0">
-        <Image
-          src="/images/graphic.webp"
-          width={450}
-          height={450}
-          alt=""
-          className="rounded-3xl"
-        />
+        <div className="relative h-60 w-96 md:h-[24rem] md:w-[36rem] lg:h-[36rem] lg:w-[32rem]">
+          <Image
+            src="/images/topdoctor.jpg"
+            layout="fill"
+            objectFit="cover"
+            alt=""
+            className="rounded-3xl"
+          />
+        </div>
       </div>
     </div>
   );

@@ -4,21 +4,26 @@ import React from "react";
 const Section2 = () => {
   return (
     <div>
-      <h1 className="text-center text-3xl font-bold uppercase md:text-5xl">
+      <h1 className="text-center text-3xl font-bold uppercase lg:text-5xl">
         Is this you?
       </h1>
       {/* SLOT 1 */}
-      <div className="mt-10 flex flex-col-reverse items-center justify-between md:flex-row">
+      <div className="mt-10 flex flex-col-reverse items-center justify-center lg:flex-row">
         {/* Left Side */}
-        <div className="max-w-3xl flex-1">
-          <h1 className="pt-4 text-2xl font-semibold md:pt-0 md:text-3xl">
+        <div className="max-w-[22rem] flex-1 text-center md:max-w-md lg:mr-10 lg:max-w-3xl lg:text-left">
+          <h1 className="pt-4 text-2xl font-semibold md:text-3xl lg:pt-0">
             Want to be the first dermat to pop up on Google? 😍
           </h1>
-          <p className="mt-2 text-lg md:mt-4">
-            We use some really cool tools and follow the best practices so that
-            Google shows your website in the top search results.
+          <p className="text-lg md:text-xl lg:max-w-2xl">
             <br />
-            The first dermatologist a patient sees is the one that he visits.
+            By following the best practices Google shows your website in the top
+            search results.
+            <br />
+            <br />
+            <em>
+              The first dermatologist a patient sees is the dermatologist that
+              the patient visits.
+            </em>
           </p>
         </div>
         {/* Right side */}
@@ -26,7 +31,7 @@ const Section2 = () => {
           {/* container for aspect ratio 16:9 */}
           <div className="relative h-60 w-96">
             <Image
-              src="/images/graphic.webp"
+              src="/images/mrbean.gif"
               layout="fill"
               objectFit="cover"
               alt=""
@@ -37,24 +42,26 @@ const Section2 = () => {
       </div>
 
       {/* SLOT 2 */}
-      <div className="mt-16 flex flex-col-reverse items-center justify-between md:flex-row-reverse">
+      <div className="mt-16 flex flex-col-reverse items-center justify-center lg:flex-row-reverse">
         {/* Right Side */}
-        <div className="max-w-3xl flex-1">
-          <h1 className="pt-4 text-2xl font-semibold md:pt-0 md:text-3xl">
-            Want a potential patient to turn into a loyal patient? 😌
+        <div className="max-w-[22rem] flex-1 text-center md:max-w-md lg:max-w-3xl lg:text-left">
+          <h1 className="pt-4 text-2xl font-semibold md:text-3xl lg:pt-0">
+            Want visitors to turn into a loyal patients? 😌
           </h1>
-          <p className="mt-2 text-lg md:mt-4">
+          <p className="text-lg md:text-xl lg:max-w-2xl">
+            <br />
             We build our websites with just one goal in mind.
             <br />
-            Get more patients than you can fill in you waiting room.
+            <br />
+            Get <em>more patients than you can fill in you waiting room.</em>
           </p>
         </div>
         {/* Left side */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 lg:mr-10">
           {/* container for aspect ratio 16:9 */}
           <div className="relative h-60 w-96">
             <Image
-              src="/images/graphic.webp"
+              src="/images/waiting.gif"
               layout="fill"
               objectFit="cover"
               alt=""
@@ -65,17 +72,24 @@ const Section2 = () => {
       </div>
 
       {/* SLOT 3 */}
-      <div className="mt-16 flex flex-col-reverse items-center justify-between md:flex-row">
+      <div className="mt-16 flex flex-col-reverse items-center justify-center lg:flex-row">
         {/* Left Side */}
-        <div className="max-w-3xl flex-1">
-          <h1 className="pt-4 text-2xl font-semibold md:pt-0 md:text-3xl">
-            Tired of your website taking forever to load? ⌚{" "}
+        <div className="max-w-[22rem] flex-1 text-center md:max-w-md lg:mr-10 lg:max-w-3xl lg:text-left">
+          <h1 className="pt-4 text-2xl font-semibold md:text-3xl lg:pt-0">
+            Tired of your old website taking forever to load? ⌚{" "}
           </h1>
-          <p className="mt-2 text-lg md:mt-4">
+          <p className="text-lg md:text-xl lg:max-w-2xl">
+            <br />
             The more time your website takes to load, the more you lose
-            patients. Why? Because who wants to wait nowadays?
-            <br /> And so, our website loads faster than the time it takes you
-            to jump on your bed after a long day.
+            patients. <br />
+            Why? Because nobody wants to wait nowadays
+            <br />
+            <br />
+            Your new website will{" "}
+            <em>
+              load faster than the time it takes you to jump on your bed at
+              night.
+            </em>
           </p>
         </div>
         {/* Right side */}
@@ -83,7 +97,7 @@ const Section2 = () => {
           {/* container for aspect ratio 16:9 */}
           <div className="relative h-60 w-96">
             <Image
-              src="/images/graphic.webp"
+              src="/images/headbang.gif"
               layout="fill"
               objectFit="cover"
               alt=""
