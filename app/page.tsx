@@ -29,7 +29,7 @@ const page = () => {
           <section className="relative my-16">
             <Hero />
           </section>
-          <div className="relative border-t-4 border-gray-200" />
+          {/* <div className="relative border-t-4 border-gray-200" /> */}
           <section className="relative my-12 md:my-24">
             <DynamicSection2 />
           </section>
