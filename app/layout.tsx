@@ -1,8 +1,7 @@
-// import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-// import { CombinedProvider } from "./provider";
+import Script from "next/script";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,16 +34,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-S1DSVVST36"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-S1DSVVST36');
+            `,
+          }}
+        />
+      </head>
       <body className={inter.className}>
-        {/* <CombinedProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        > */}
         {children}
-        {/* <Analytics /> */}
-        {/* </CombinedProvider> */}
       </body>
     </html>
   );
