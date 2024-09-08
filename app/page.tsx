@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import GridAndDotBg from "@/components/ui/GridAndDotBg";
 import Hero from "@/components/Hero3";
 import Header from "@/components/Header";
+import Header2 from "@/components/Header2";
 
 const DynamicFooter = dynamic(() => import("@/components/Footer3"), {
   ssr: false,
@@ -22,11 +23,13 @@ const DynamicCTA = dynamic(() => import("@/components/CTAsection"), {
 const page = () => {
   return (
     <div className="overflow-clip bg-black-100">
+      <nav className="w-full">
+        <Header2 />
+      </nav>
       <main className="relative mx-auto flex flex-col items-center justify-center overflow-clip px-5 sm:px-10">
         <div className="w-full max-w-[90rem]">
-          <Header />
           <GridAndDotBg />
-          <section className="relative my-16">
+          <section className="relative my-16 mt-24 md:mt-32 lg:mt-40">
             <Hero />
           </section>
           {/* <div className="relative border-t-4 border-gray-200" /> */}

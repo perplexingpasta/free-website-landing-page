@@ -19,9 +19,9 @@ const Hero3 = () => {
           website and become the first dermatologist that pops up on Google
         </h1>
 
-        <div className="mx-auto mt-10 max-w-[23rem] text-left md:mt-16 md:max-w-xl lg:mx-0 lg:max-w-4xl">
+        <div className="mx-auto mt-10 max-w-[23rem] text-left text-base md:mt-16 md:max-w-xl md:text-xl lg:mx-0 lg:max-w-3xl">
           <p className="mb-2 md:mb-4">Imagine a website that:</p>
-          <ul className="space-y-2 text-lg md:space-y-4 md:text-xl">
+          <ul className="space-y-2 md:space-y-4">
             <li className="pl-5 -indent-5">
               ✦ Is hand-coded, which Google absolutely loves! 💻
             </li>
@@ -44,7 +44,7 @@ const Hero3 = () => {
           to code your website from scratch. That&apos;s it! 🎊
         </p> */}
 
-        <div className="mt-16 grid place-items-center">
+        <div className="mt-16 lg:mt-24 grid place-items-center">
           <Link
             href={"https://forms.gle/mfPgVKy1jjT8KqHU6"}
             target="_blank"
@@ -56,7 +56,7 @@ const Hero3 = () => {
               position="right"
             />
           </Link>
-          <p className="mx-auto mt-4 max-w-xs text-base md:text-lg lg:mx-0 lg:max-w-md lg:text-xl">
+          <p className="mx-auto mt-4 max-w-xs text-center text-base md:text-lg lg:max-w-md lg:text-xl">
             It&apos;s genuinely 100% free forever with 1 year support, we
             promise! 😊
           </p>

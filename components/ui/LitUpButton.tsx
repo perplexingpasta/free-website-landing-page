@@ -15,7 +15,7 @@ const LitUpButton = ({
     <button className="relative rounded-lg p-[3px]" onClick={handleClick}>
       <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purpledark" />
       <div
-        className={`group text-sm md:text-base relative inline-flex h-full w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-black-100 px-7 py-2 uppercase tracking-widest text-white text-opacity-75 transition duration-300 ease-in-out hover:text-opacity-100 ${otherClasses}`}
+        className={`group relative inline-flex h-full w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-white px-4 py-2 font-montserrat text-sm font-semibold uppercase tracking-widest text-black-100 transition duration-300 ease-in-out hover:bg-transparent hover:text-white ${otherClasses}`}
       >
         {position === "left" && icon}
         {title}
