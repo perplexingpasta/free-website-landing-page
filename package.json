@@ -1,5 +1,5 @@
 {
-  "name": "aesclepius-2024",
+  "name": "celese-consulting-free-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,12 +17,13 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.2",
     "mini-svg-data-uri": "^1.4.4",
-    "next": "14.2.5",
-    "react": "^18",
-    "react-dom": "^18",
+    "motion": "^12.4.10",
+    "next": "^15.2.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-icons": "^5.2.1",
     "react-spinners": "^0.14.1",
-    "tailwind-merge": "^2.4.0",
+    "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "tailwindcss-filters": "^3.0.0"
   },

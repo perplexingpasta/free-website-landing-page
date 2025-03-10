@@ -45,14 +45,33 @@ const Footer = () => {
 
         <div className="relative flex flex-col lg:flex-1 lg:flex-row">
           <div>
-            <Link href="/">
-              <Image
-                src="/images/footer-logo.webp"
-                width={450}
-                height={112.5}
-                alt="Logo of celeste consulting"
-              />
-            </Link>
+            <div className="flex items-center align-middle">
+              <a
+                href="https://www.celesteconsulting.in"
+                target="_blank"
+                className="group flex items-center gap-x-4"
+              >
+                <Image
+                  src="/images/celeste logo.png"
+                  width={250}
+                  height={250}
+                  className="h-20 w-20 xl:h-24 xl:w-24"
+                  alt="Logo of celeste consulting"
+                />
+                <div className="mx-auto lg:max-w-[20vw]">
+                  <p className="text-lg font-bold md:text-2xl lg:mb-2 xl:text-3xl">
+                    céleste consulting
+                  </p>
+                  <p className="text-sm font-light opacity-75 md:text-xl">
+                    Helping Dermatologists with{" "}
+                    <span className="transition-all group-hover:text-indigo-300">
+                      Consistent, Predictable & Loyal
+                    </span>{" "}
+                    Patient Acquisition
+                  </p>
+                </div>
+              </a>
+            </div>
             <br />
             <br className="hidden md:block" />
             <div className="flex items-center justify-center gap-3 pt-5 md:gap-4 md:pt-0 lg:hidden lg:justify-start lg:pt-12">
@@ -102,7 +121,7 @@ const Footer = () => {
               <ul>
                 {footerCol3.links.map((item) => (
                   <li
-                    className="mt-3 cursor-pointer text-sm leading-normal text-white-400 transition-all hover:scale-110 hover:text-purple md:text-base"
+                    className="mt-3 cursor-pointer text-sm leading-normal text-white-400 transition-all hover:scale-110 hover:text-indigo-300 md:text-base"
                     key={item.label}
                   >
                     <Image

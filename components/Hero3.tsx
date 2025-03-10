@@ -1,27 +1,30 @@
 import Image from "next/image";
 import React from "react";
-import { FaLocationArrow } from "react-icons/fa6";
-import LitUpButtonBg from "./ui/LitUpButtonBg";
-import Link from "next/link";
+import { AnimatedModalDemo } from "./AnimatedModalDemo";
+// import { FaLocationArrow } from "react-icons/fa6";
+// import LitUpButtonBg from "./ui/LitUpButtonBg";
+// import Link from "next/link";
 
 const Hero3 = () => {
   return (
-    <div className="flex flex-col-reverse items-center justify-center lg:flex-row lg:justify-between">
+    <div className="flex flex-col-reverse items-center justify-center lg:mb-48 lg:flex-row lg:justify-between">
       {/* Left side */}
       <div className="mt-12 text-center text-xl md:text-xl lg:mt-4 lg:text-left">
-        <p>
-          Are you a <span className="underline">dermatologist</span> looking to
-          be the best in your city?
-        </p>
+        <p>Are you a dermatologist looking to be the best in your city?</p>
 
-        <h1 className="mt-8 font-montserrat text-3xl font-semibold leading-snug md:mt-8 md:text-4xl md:leading-tight lg:max-w-4xl">
-          Get your <span className="text-violet-500 underline">FREE</span>{" "}
-          website and become the first dermatologist that pops up on Google
+        <h1 className="leading mt-8 text-3xl font-semibold text-neutral-700 md:mt-8 md:max-w-xl md:text-4xl md:leading-tight lg:max-w-4xl lg:tracking-wide">
+          Get your <span className="font-black text-indigo-500">FREE</span>{" "}
+          website <br className="hidden md:block" /> and become the first
+          dermatologist <br className="hidden md:block" />
+          that pops up on Google
         </h1>
 
-        <div className="mx-auto mt-10 max-w-[23rem] text-left text-base md:mt-16 md:max-w-xl md:text-xl lg:mx-0 lg:max-w-3xl">
-          <p className="mb-2 md:mb-4">Imagine a website that:</p>
+        <div className="mx-auto mt-10 max-w-[95%] text-left text-base md:mt-16 md:max-w-xl md:text-xl lg:mx-0 lg:max-w-3xl">
+          <p className="mb-2 md:mb-4">Imagine a website that</p>
           <ul className="space-y-2 md:space-y-4">
+            <li className="pl-5 -indent-5">
+              ✦ Is a patient-oriented medical website 🩺
+            </li>
             <li className="pl-5 -indent-5">
               ✦ Is hand-coded, which Google absolutely loves! 💻
             </li>
@@ -32,20 +35,15 @@ const Hero3 = () => {
               ✦ Is designed to turn website visitors into loyal patients for
               years to come 💖
             </li>
-            <li className="pl-5 -indent-5">
+            <li className="pl-5 -indent-5 lg:leading-relaxed">
               ✦ Ranks among the top results on Google, when people search for
               &quot;best dermatologist in the city&quot; 🌍
             </li>
           </ul>
         </div>
 
-        {/* <p className="mt-12 max-w-3xl">
-          All you need to do is fill out a quick Google form and give us a week
-          to code your website from scratch. That&apos;s it! 🎊
-        </p> */}
-
-        <div className="mt-16 lg:mt-24 grid place-items-center">
-          <Link
+        <div className="mt-4 grid place-items-center md:mt-10 lg:mt-16">
+          {/* <a
             href={"https://forms.gle/mfPgVKy1jjT8KqHU6"}
             target="_blank"
             rel="noopener"
@@ -55,11 +53,15 @@ const Hero3 = () => {
               icon={<FaLocationArrow />}
               position="right"
             />
-          </Link>
-          <p className="mx-auto mt-4 max-w-xs text-center text-base md:text-lg lg:max-w-md lg:text-xl">
+          </a> */}
+          <AnimatedModalDemo />
+          <div className="mx-auto mb-8 mt-2 max-w-[70%] text-center text-sm font-medium opacity-50 md:mt-4 md:text-base lg:mt-3 lg:max-w-[50%]">
+            100% Free. No Strings Attached.
+          </div>
+          {/* <p className="mx-auto mt-4 max-w-xs text-center text-base md:text-lg lg:max-w-md lg:text-xl">
             It&apos;s genuinely 100% free forever with 1 year support, we
             promise! 😊
-          </p>
+          </p> */}
         </div>
       </div>
 
@@ -71,7 +73,7 @@ const Hero3 = () => {
             layout="fill"
             objectFit="cover"
             alt=""
-            className="rounded-3xl"
+            className="md:rounded-3xl"
           />
         </div>
       </div>

@@ -22,7 +22,7 @@ export const socialMedia = [
     height: 20,
     alt: "celeste consulting's instagram page link",
     img: "/images/insta.svg",
-    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    link: "https://www.instagram.com/consultceleste",
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ export const socialMedia1 = [
     height: 20,
     alt: "celeste consulting's instagram page link",
     img: "/images/insta.svg",
-    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    link: "https://www.instagram.com/consultceleste",
   },
 ];
 

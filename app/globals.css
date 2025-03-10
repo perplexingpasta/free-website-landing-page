@@ -42,45 +42,12 @@
 
     --radius: 0.5rem;
   }
-
-  .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
-  }
 }
 
 @layer base {
   * {
     @apply !scroll-smooth border-border;
   }
-  /* body {
-    @apply bg-background text-foreground;
-  } */
   button {
     @apply active:outline-none;
   }
@@ -135,28 +102,6 @@
 }
 
 .gradient-text {
-  /* background: linear-gradient(
-    to right,
-    #a855f7,
-    #ec4899,
-    #eab308,
-    #ec4899,
-    #a855f7,
-    #ec4899,
-    #eab308
-  ); */
-
-  /* background: linear-gradient(
-    to right,
-    #6366f1,
-    #a5b4fc,
-    #CBACF9,
-    #a5b4fc,
-    #6366f1,
-    #a5b4fc,
-    #CBACF9
-  ); */
-
   background: linear-gradient(
     to right,
     #4338ca,
@@ -168,53 +113,6 @@
   );
   background-size: 500% 500%;
   background-clip: text;
-}
-
-/* FROM NIKE */
-
-@layer components {
-  .max-container {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-
-  .input {
-    @apply border pl-5 text-base leading-normal text-slate-gray outline-none max-sm:w-full max-sm:rounded-full max-sm:border-slate-gray max-sm:p-5 sm:flex-1 sm:border-none;
-  }
-}
-
-@layer utilities {
-  .padding {
-    @apply px-8 py-12 sm:px-16 sm:py-24;
-  }
-
-  .padding-x {
-    @apply px-8 sm:px-16;
-  }
-
-  .padding-y {
-    @apply py-12 sm:py-24;
-  }
-
-  .padding-l {
-    @apply pl-8 sm:pl-16;
-  }
-
-  .padding-r {
-    @apply pr-8 sm:pr-16;
-  }
-
-  .padding-t {
-    @apply pt-12 sm:pt-24;
-  }
-
-  .padding-b {
-    @apply pb-12 sm:pb-24;
-  }
-
-  /* .info-text {
-    @apply font-montserrat text-lg leading-7 text-slate-gray;
-  } */
 }
 
 /* FOR 404 PAGE NOT FOUND */
@@ -272,28 +170,6 @@
   }
 }
 
-.content #pagenotfound {
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  /* font-size: 2rem; */
-}
-
-.content .btns {
-  /* margin: 25px 0; */
-  display: inline-flex;
-  justify-content: center;
-}
-.content .btns a {
-  margin: 0 10px;
-  font-weight: 500;
-  padding: 10px 25px;
-  text-transform: uppercase;
-}
-/* .content .btns a:hover {
-  background: var(--btn-color);
-  color: coral
-} */
-
 /* FONTS CSS */
 /* @font-face {
   font-family: "Outfit";
@@ -307,82 +183,15 @@
   src: url("/fonts/Lexend-Variable.ttf") format("truetype");
   font-weight: 100 200 300 400 500 600 700 800 900;
   font-style: normal;
-}
+} */
 
 @font-face {
   font-family: "LexendDeca";
   src: url("/fonts/LexendDeca-Variable.ttf") format("truetype");
   font-weight: 100 200 300 400 500 600 700 800 900;
   font-style: normal;
-} */
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 100 900; 
-  src: url('/fonts/Montserrat-variable.ttf') format('truetype-variations');
 }
-
-@font-face {
-  font-family: 'Poppins';
-  font-weight: 100;
-  src: url('/fonts/Poppins-Thin.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Poppins';
-  font-weight: 200;
-  src: url('/fonts/Poppins-ExtraLight.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Poppins';
-  font-weight: 300;
-  src: url('/fonts/Poppins-Light.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Poppins';
-  font-weight: 400;
-  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Poppins';
-  font-weight: 500;
-  src: url('/fonts/Poppins-Medium.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Poppins';
-  font-weight: 600;
-  src: url('/fonts/Poppins-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Poppins';
-  font-weight: 700;
-  src: url('/fonts/Poppins-Bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Poppins';
-  font-weight: 800;
-  src: url('/fonts/Poppins-ExtraBold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Poppins';
-  font-weight: 900;
-  src: url('/fonts/Poppins-Black.ttf') format('truetype');
-}
-
 
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
-
-/* ul.herox li::before {
-  content: '✦';
-  padding-right: 0.5em;
-} */

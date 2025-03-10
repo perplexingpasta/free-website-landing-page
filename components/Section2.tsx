@@ -4,20 +4,20 @@ import React from "react";
 const Section2 = () => {
   return (
     <div>
-      <h1 className="text-center text-3xl font-bold uppercase lg:text-5xl">
+      <h1 className="text-center text-3xl font-extrabold uppercase md:text-4xl lg:text-5xl lg:tracking-wider">
         Is this you?
       </h1>
       {/* SLOT 1 */}
-      <div className="mt-10 flex flex-col-reverse items-center justify-center lg:flex-row">
+      <div className="mt-4 flex flex-col-reverse items-center justify-center md:mt-10 lg:mt-16 lg:flex-row">
         {/* Left Side */}
-        <div className="max-w-[22rem] flex-1 text-center md:max-w-md lg:mr-10 lg:max-w-3xl lg:text-left">
+        <div className="max-w-[22rem] flex-1 text-center md:max-w-xl lg:mr-10 lg:max-w-3xl lg:text-left">
           <h1 className="pt-4 text-2xl font-semibold md:text-3xl lg:pt-0">
             Want to be the first dermat to pop up on Google? 😍
           </h1>
           <p className="text-lg md:text-xl lg:max-w-2xl">
             <br />
-            By following the best practices Google shows your website in the top
-            search results.
+            By following the best practices, Google displays your website among
+            the top search results.
             <br />
             <br />
             <em>
@@ -35,7 +35,7 @@ const Section2 = () => {
               layout="fill"
               objectFit="cover"
               alt=""
-              className="rounded-3xl"
+              className="md:rounded-3xl"
             />
           </div>
         </div>
@@ -44,16 +44,15 @@ const Section2 = () => {
       {/* SLOT 2 */}
       <div className="mt-16 flex flex-col-reverse items-center justify-center lg:flex-row-reverse">
         {/* Right Side */}
-        <div className="max-w-[22rem] flex-1 text-center md:max-w-md lg:max-w-3xl lg:text-left">
+        <div className="max-w-[22rem] flex-1 text-center md:max-w-xl lg:max-w-3xl lg:text-left">
           <h1 className="pt-4 text-2xl font-semibold md:text-3xl lg:pt-0">
-            Want visitors to turn into a loyal patients? 😌
+            Want visitors to turn into loyal patients? 😌
           </h1>
           <p className="text-lg md:text-xl lg:max-w-2xl">
             <br />
-            We build our websites with just one goal in mind.
+            We build our websites with just one goal in mind:
             <br />
-            <br />
-            Get <em>more patients than you can fill in you waiting room.</em>
+            Get more patients than you can fill in your waiting room.
           </p>
         </div>
         {/* Left side */}
@@ -65,7 +64,7 @@ const Section2 = () => {
               layout="fill"
               objectFit="cover"
               alt=""
-              className="rounded-3xl"
+              className="md:rounded-3xl"
             />
           </div>
         </div>
@@ -74,22 +73,19 @@ const Section2 = () => {
       {/* SLOT 3 */}
       <div className="mt-16 flex flex-col-reverse items-center justify-center lg:flex-row">
         {/* Left Side */}
-        <div className="max-w-[22rem] flex-1 text-center md:max-w-md lg:mr-10 lg:max-w-3xl lg:text-left">
+        <div className="max-w-[22rem] flex-1 text-center md:max-w-xl lg:mr-10 lg:max-w-3xl lg:text-left">
           <h1 className="pt-4 text-2xl font-semibold md:text-3xl lg:pt-0">
             Tired of your old website taking forever to load? ⌚{" "}
           </h1>
           <p className="text-lg md:text-xl lg:max-w-2xl">
             <br />
-            The more time your website takes to load, the more you lose
+            The slower your website loads, the more you risk losing potential
             patients. <br />
-            Why? Because nobody wants to wait nowadays
+            Why? Because nobody wants to wait nowadays!
             <br />
             <br />
-            Your new website will{" "}
-            <em>
-              load faster than the time it takes you to jump on your bed at
-              night.
-            </em>
+            Your new website will load faster than the time it takes you to jump
+            on your bed at night.
           </p>
         </div>
         {/* Right side */}
@@ -101,7 +97,7 @@ const Section2 = () => {
               layout="fill"
               objectFit="cover"
               alt=""
-              className="rounded-3xl"
+              className="md:rounded-3xl"
             />
           </div>
         </div>
