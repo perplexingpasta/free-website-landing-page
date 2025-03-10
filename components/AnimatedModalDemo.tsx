@@ -36,7 +36,7 @@ export function AnimatedModalDemo() {
               <span className="rounded-md border border-gray-200 bg-gray-100 px-1 py-0.5">
                 Patient-Oriented
               </span>{" "}
-              Medical Website! ✨
+              Dermatology Website! ✨
             </h4>
             <div className="flex items-center justify-center">
               {images.map((image, idx) => (
@@ -99,13 +99,13 @@ export function AnimatedModalDemo() {
                 <span className="text-sm text-neutral-700">Paragliding</span>
               </div> */}
               <div className="-mb-10 flex flex-col space-y-4 text-left text-base text-neutral-700 md:text-lg lg:text-xl">
-                <p>Just 3 Simple Steps:</p>
+                <p>Just 4 Simple Steps:</p>
                 <p>1. Click the Call Now button to speak to our team</p>
                 <p>
-                  2. Tell them you&apos;d like the free website & answer all
-                  their questions
+                  2. Tell them you&apos;d like the free website for your dermatology practice
                 </p>
-                <p>3. Done!</p>
+                <p>3. Answer all their questions</p>
+                <p>4. Done!</p>
               </div>
             </div>
           </ModalContent>
