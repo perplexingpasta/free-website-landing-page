@@ -13,7 +13,11 @@ const Hero3 = () => {
         <p>Are you a dermatologist looking to be the best in your city?</p>
 
         <h1 className="leading mt-8 text-3xl font-semibold text-neutral-700 md:mt-8 md:max-w-xl md:text-4xl md:leading-tight lg:max-w-4xl lg:tracking-wide">
-          Get your <span className="font-black text-indigo-500">FREE</span>{" "}
+          Get your{" "}
+          <span className="font-black text-indigo-500">
+            FREE{" "}
+            {/* <span className="relative mx-auto mt-1 w-[25vw] border-t-[5px] border-indigo-700 md:w-[16vw] md:border-t-[6px] lg:w-[7vw] lg:border-t-[7px]"></span> */}
+          </span>{" "}
           website <br className="hidden md:block" /> and become the first
           dermatologist <br className="hidden md:block" />
           that pops up on Google

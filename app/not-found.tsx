@@ -1,5 +1,6 @@
 import React from "react";
-import { HomeIcon, ArrowRightIcon } from "@radix-ui/react-icons";
+// import { HomeIcon, ArrowRightIcon } from "@radix-ui/react-icons";
+import { GoHomeFill, GoArrowRight } from "react-icons/go";
 import Link from "next/link";
 
 const PageNotFound = () => {
@@ -11,7 +12,7 @@ const PageNotFound = () => {
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
         </div>
         <div className="content relative">
-          <h1 className="header text-[9rem] font-bold md:text-[13rem] lg:text-[16rem] 2xl:text-[12vw]">
+          <h1 className="header font-lexendDeca text-[9rem] font-bold md:text-[13rem] lg:text-[16rem] 2xl:text-[12vw]">
             404
           </h1>
           <h1
@@ -29,14 +30,16 @@ const PageNotFound = () => {
             If you believe there&apos;s an issue, feel free to report it and
             we&apos;ll look into it.
           </p>
-          <div className="mb-20 mt-10 flex flex-col items-center justify-evenly md:mt-10 md:flex-row">
-            <div className="btns btn mt-6 rounded-full bg-slate-200 text-black-100 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-red-300 hover:text-white md:my-6">
+          <div className="mb-20 mt-10 flex flex-col items-center justify-evenly md:mt-10 lg:mt-4 md:flex-row">
+            <div className="btns btn mt-6 rounded-full bg-slate-200 p-4 uppercase text-black-100 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-red-400 hover:text-white md:my-6">
               <Link href="/">return home</Link>
-              <HomeIcon className="-ml-5 mr-4 mt-4 md:mr-7 lg:mr-7" />
+              {/* <HomeIcon className="-ml-5 mr-4 mt-4 md:mr-7 lg:mr-7" /> */}
+              {/* <GoHomeFill /> */}
             </div>
-            <div className="btns btn mt-6 rounded-full bg-slate-200 text-black-100 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-blue-300 hover:text-white md:my-6">
+            <div className="btns btn mt-6 rounded-full bg-slate-200 p-4 uppercase text-black-100 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-blue-300 hover:text-white md:my-6">
               <Link href="/contact">report issue</Link>
-              <ArrowRightIcon className="-ml-7 mr-4 mt-4 md:mr-6 lg:mr-7" />
+              {/* <ArrowRightIcon className="-ml-7 mr-4 mt-4 md:mr-6 lg:mr-7" /> */}
+              {/* <GoArrowRight /> */}
             </div>
           </div>
         </div>
