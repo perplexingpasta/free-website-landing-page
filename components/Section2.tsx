@@ -4,7 +4,7 @@ import React from "react";
 const Section2 = () => {
   return (
     <div>
-      <h1 className="text-center text-3xl font-extrabold uppercase md:text-4xl lg:text-5xl lg:tracking-wider">
+      <h1 className="text-center text-3xl font-bold uppercase md:text-4xl lg:text-5xl lg:tracking-wider">
         Is this you?
       </h1>
       {/* SLOT 1 */}
