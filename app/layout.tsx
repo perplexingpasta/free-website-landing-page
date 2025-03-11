@@ -11,8 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Céleste Consulting | Helping Dermatologists with Consistent, Predictable & Loyal Patient Acquisition",
+  title: "Patient-Oriented Medical Website | Céleste Consulting",
   description:
     "We help dermatologists with consistent, predictable & loyal patient acquisition. We get dermatologists more patients and help them grow their practice online by running paid ads on facebook and google and professional website development using nextjs. We also help set up their google business profile and increase google reviews on google maps of their clinic.",
   other: {

@@ -4,7 +4,6 @@ import dynamic from "next/dynamic";
 import GridAndDotBg from "@/components/ui/GridAndDotBg";
 import Hero from "@/components/Hero3";
 import Header2 from "@/components/Header2";
-// import Header from "@/components/Header";
 
 const DynamicFooter = dynamic(() => import("@/components/Footer3"));
 const DynamicWhatsapp = dynamic(() => import("@/components/Whatsapp"));

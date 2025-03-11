@@ -13,7 +13,7 @@ const Hero3 = () => {
         <p>
           Are you a{" "}
           <span className="rounded-lg bg-indigo-200 px-2">dermatologist</span>{" "}
-          looking to be the best in your city?
+          looking to be #1 in your city?
         </p>
 
         <h1 className="leading mt-8 text-3xl font-semibold text-neutral-700 md:mt-8 md:max-w-xl md:text-4xl md:leading-tight lg:max-w-4xl lg:tracking-wide">
@@ -28,29 +28,30 @@ const Hero3 = () => {
         </h1>
 
         <div className="mx-auto mt-10 max-w-[95%] text-left text-base md:mt-16 md:max-w-xl md:text-xl lg:mx-0 lg:max-w-3xl">
-          <p className="mb-2 md:mb-4">Imagine a website that</p>
-          <ul className="space-y-2 md:space-y-4">
-            <li className="pl-5 -indent-5">
-              ✦ Is a patient-oriented medical website 🩺
+          {/* <p className="mb-2 md:mb-4">Imagine a website that</p> */}
+          <ul className="space-y-2 pl-8 md:space-y-4">
+            <li className="-indent-5 leading-relaxed">
+              ✦ Patient-Oriented Medical Website (worth over ₹64,000) ✨
             </li>
-            <li className="pl-5 -indent-5">
-              ✦ Is hand-coded, which Google absolutely loves! 💻
+            <li className="-indent-5 leading-relaxed">
+              ✦ Designed to Convert Visitors into Loyal Patients 💖
             </li>
-            <li className="pl-5 -indent-5">
-              ✦ Loads under half a second, making it super fast! 🚀
+            <li className="-indent-5 leading-relaxed">
+              ✦ Tailored to Prioritize Patient&apos;s Needs 🩺
             </li>
-            <li className="pl-5 -indent-5">
-              ✦ Is designed to turn website visitors into loyal patients for
-              years to come 💖
+            <li className="-indent-5 leading-relaxed">
+              ✦ Loads Super Incredibly Fast 🚀
             </li>
-            <li className="pl-5 -indent-5 lg:leading-relaxed">
-              ✦ Ranks among the top results on Google, when people search for
-              &quot;best dermatologist in the city&quot; 🌍
+            <li className="-indent-5 leading-relaxed">
+              ✦ Hand-coded, which Google Absolutely Loves! 💻
+            </li>
+            <li className="-indent-5 leading-relaxed">
+              ✦ Ranks among the Top Results on Google 🌍
             </li>
           </ul>
         </div>
 
-        <div className="mt-4 grid place-items-center md:mt-10 lg:mt-16">
+        <div className="mt-8 grid place-items-center md:mt-16">
           {/* <a
             href={"https://forms.gle/mfPgVKy1jjT8KqHU6"}
             target="_blank"
